@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="header-wrapper" id="home-section">
+        <nav class="header-wrapper__nav container">
+            <a class="logo-link header-wrapper__nav__logo-link" href="#" alt="Cahee">
+                <img src="img/logo.png">
+            </a>
+            <div class="nav-block header-wrapper__nav__nav-block">
+                <a class="nav-block__link" href="#home-section" alt="Home">Home</a>
+                <a class="nav-block__link" href="#about-section" alt="About">About</a>
+                <a class="nav-block__link" href="#services-section" alt="Services">Services</a>
+                <a class="nav-block__link" href="#gallery-section" alt="Gallery">Gallery</a>
+                <a class="nav-block__link" href="#blog-section" alt="Blog">Blog</a>
+                <a class="nav-block__link" href="#contact-section" alt="Contact">Contact</a>
+            </div>
+            <button class="burger header-wrapper__nav__burger"
+                onclick="this.classList.toggle('burger_opened');this.setAttribute('aria-expanded', this.classList.contains('burger_opened'))"
+                aria-label="Main Menu">
+                <svg width="120" height="60" viewBox="0 0 100 100">
+                    <path class="burger_line burger_line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="burger_line burger_line2" d="M 20,50 H 80" />
+                    <path class="burger_line burger_line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+            <div class="mobile-links-block menu-open">
+                <a class="mobile-links-block__link" href="#home-section" alt="Home">Home</a>
+                <a class="mobile-links-block__link" href="#about-section" alt="About">About</a>
+                <a class="mobile-links-block__link" href="#services-section" alt="Services">Services</a>
+                <a class="mobile-links-block__link" href="#gallery-section" alt="Gallery">Gallery</a>
+                <a class="mobile-links-block__link" href="#blog-section" alt="Blog">Blog</a>
+                <a class="mobile-links-block__link" href="#contact-section" alt="Contact">Contact</a>
+            </div>
+        </nav>
+        <header class="header-wrapper__header container">
+            <h1 class="title header-wrapper__header__title">Fresh Life</h1>
+            <p class="text header-wrapper__header__text">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco.
+            </p>
+            <button class="button header-wrapper__header__button">Get free now</button>
+            <img class="header-wrapper__header__scroll-icon" src="img/scroll_icon.png" alt="Scroll Down">
+        </header>
+    </section>
+    <section class="about-wrapper container" id="about-section">
+        <article class="about-wrapper__article">
+            <img class="about-wrapper__article__img" src="img/about_img.png" alt="Plate with raspberries">
+            <div class="about-wrapper__article__text-block">
+                <h3 class="title-white about-wrapper__article__text-block__title-white">
+                    About Us
+                </h3>
+                <p class="text text_white text_white_mb about-wrapper__article__text-block__text">
+                    Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum.
+                </p>
+                <p class="text text_white about-wrapper__article__text-block__text">
+                    Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                </p>
+            </div>
+        </article>
+    </section>
+    <section class="services-wrapper container" id="services-section">
+        <article class="services-wrapper__article">
+            <div class="buttons-block services-wrapper__article__buttons-block">
+                <button class="services-button buttons-block__services-button">
+                    <p class="services-button__text">Online Shopping</p>
+                    <span class="services-button__span"></span>
+                    <i class="services-button__icon icon-cart"></i>
+                </button>
+                <button class="services-button buttons-block__services-button">
+                    <p class="services-button__text">Quality Product</p>
+                    <span class="services-button__span"></span>
+                    <i class="services-button__icon icon-plant"></i>
+                </button>
+                <button class="services-button buttons-block__services-button">
+                    <p class="services-button__text">Domestic & International Delivery</p>
+                    <span class="services-button__span"></span>
+                    <i class="services-button__icon icon-planet"></i>
+                </button>
+                <button class="services-button buttons-block__services-button">
+                    <p class="services-button__text">Well Organized</p>
+                    <span class="services-button__span"></span>
+                    <i class="services-button__icon icon-carrot"></i>
+                </button>
+            </div>
+            <h3 class="title-white services-wrapper__article__title-white">Our Services</h3>
+        </article>
+    </section>
+    <section class="gallery-wrapper container" id="gallery-section">
+        <article class="gallery-wrapper__article">
+            <h3 class="title-bold gallery-wrapper__article__title-bold">Gallery</h3>
+            <p class="text text_center gallery-wrapper__article__text">
+                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="gallery-img-block gallery-wrapper__article__gallery-img-block">
+                <div class="gallery-img-block__row">
+                    <a class="gallery-img-block__link gallery-img-block__link__big" href="#" alt="Peach">
+                        <img class="gallery-img_big" src="img/gallery_img_1.jpg">
+                    </a>
+                    <div class="gallery-img-block__column">
+                        <a class="gallery-img-block__link gallery-img-block__link__small" href="#" alt="Blueberry">
+                            <img class="gallery-img_small" src="img/gallery_img_2.jpg">
+                        </a>
+                        <a class="gallery-img-block__link gallery-img-block__link__small" href="#" alt="Blackberry">
+                            <img class="gallery-img_small" src="img/gallery_img_3.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-img-block__row gallery-img-block__row_2">
+                    <a class="gallery-img-block__link gallery-img-block__link__medium" href="#" alt="Blueberry">
+                        <img class="gallery-img_medium" src="img/gallery_img_4.jpg">
+                    </a>
+                    <a class="gallery-img-block__link gallery-img-block__link__medium" href="#" alt="Garnet">
+                        <img class="gallery-img_medium" src="img/gallery_img_5.jpg">
+                    </a>
+                </div>
+            </div>
+            <button class="button button_blue gallery-wrapper__article__button">View More</button>
+        </article>
+    </section>
+    <section class="subscribe-wrapper container">
+        <article class="subscribe-wrapper__article">
+            <h5 class="title-bold title-bold_small subscribe-wrapper__article__title-bold">
+                Subscribe To Us
+            </h5>
+            <p class="text subscribe-wrapper__article__text">
+                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam.
+            </p>
+            <form class="sub-form subscribe-wrapper__article__sub-form" action="#">
+                <input class="sub-form__input" type="email" placeholder="Your email address..." name="email">
+                <button class="button button_small button_green sub-form__button">Subscribe</button>
+            </form>
+        </article>
+    </section>
+    <section class="blog-wrapper" id="blog-section">
+        <article class="blog-wrapper__article">
+            <h3 class="title-white blog-wrapper__article__title-white">Blog</h3>
+            <p class="text text_white  text_center blog-wrapper__article__text">
+                Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+            <div class="blog-links-block blog-wrapper__article__blog-links-block">
+                <div class="blog-link-block blog-links-block__blog-link-block">
+                    <a class="blog-link-block__img-link" href="#" alt="Green Smoothie">
+                        <img class="blog-link-block__img-link__img" src="img/blog_img_1.jpg">
+                    </a>
+                    <div class="blog-link-block__text-block">
+                        <a class="blog-link-block__text-block__title-link" href="#"
+                            alt="Green Smoothies: Too Much of a Good Thing?">
+                            Green Smoothies: Too Much of a Good Thing?
+                        </a>
+                        <div class="blog-link-block__text-block__author-block">
+                            <a class="blog-link-block__text-block__author-block__author-link" href="#"
+                                alt="By Auskteez">
+                                By Auskteez
+                            </a>
+                            <p class="blog-link-block__text-block__author-block__hours">
+                                - 2 hours ago
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-link-block__date-block">
+                        <p class="blog-link-block__date-block__day">20</p>
+                        <p class="blog-link-block__date-block__month">Nov</p>
+                    </div>
+                </div>
+                <div class="blog-link-block blog-links-block__blog-link-block">
+                    <a class="blog-link-block__img-link" href="#" alt="Pea soup">
+                        <img class="blog-link-block__img-link__img" src="img/blog_img_2.jpg">
+                    </a>
+                    <div class="blog-link-block__text-block">
+                        <a class="blog-link-block__text-block__title-link" href="#"
+                            alt="Growing Food and a “Thirst” for Innovation">
+                            Growing Food and a “Thirst” for Innovation
+                        </a>
+                        <div class="blog-link-block__text-block__author-block">
+                            <a class="blog-link-block__text-block__author-block__author-link" href="#"
+                                alt="By Auskteez">
+                                By Auskteez
+                            </a>
+                            <p class="blog-link-block__text-block__author-block__hours">
+                                - 3 hours ago
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-link-block__date-block">
+                        <p class="blog-link-block__date-block__day">14</p>
+                        <p class="blog-link-block__date-block__month">Nov</p>
+                    </div>
+                </div>
+                <div class="blog-link-block blog-links-block__blog-link-block">
+                    <a class="blog-link-block__img-link" href="#" alt="Raspberries in containers">
+                        <img class="blog-link-block__img-link__img" src="img/blog_img_3.jpg">
+                    </a>
+                    <div class="blog-link-block__text-block">
+                        <a class="blog-link-block__text-block__title-link" href="#"
+                            alt="Pesticides & Food: What You Need to Know">
+                            Pesticides & Food: What You Need to Know
+                        </a>
+                        <div class="blog-link-block__text-block__author-block">
+                            <a class="blog-link-block__text-block__author-block__author-link" href="#"
+                                alt="By Auskteez">
+                                By Auskteez
+                            </a>
+                            <p class="blog-link-block__text-block__author-block__hours">
+                                - 6 hours ago
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-link-block__date-block">
+                        <p class="blog-link-block__date-block__day">10</p>
+                        <p class="blog-link-block__date-block__month">Nov</p>
+                    </div>
+                </div>
+            </div>
+            <button class="button button_red blog-wrapper__article__button">View More</button>
+        </article>
+    </section>
+    <section class="contact-wrapper container" id="contact-section">
+        <article class="contact-wrapper__article">
+            <h3 class="title-bold contact-wrapper__article__title-bold">Contact</h3>
+            <p class="text text_center contact-wrapper__article__text">
+                For new projects, ideas, business or anything you'd like to discuss, contact with me!
+            </p>
+            <div class="form-adress-block contact-wrapper__article__form-adress-block">
+                <form class="form-adress-block__form" action="#">
+                    <input class="form-adress-block__form__input" type="text" required placeholder="Your name..."
+                        name="name">
+                    <input class="form-adress-block__form__input" type="email" required placeholder="Your email..."
+                        name="email">
+                    <input class="form-adress-block__form__input" type="tel" required placeholder="Your phone number..."
+                        name="tel">
+                    <textarea class="form-adress-block__form__input form-adress-block__form__textarea" required
+                        placeholder="Your message..." name="message"></textarea>
+                    <button class="button button_blue button_small form-adress-block__form__button">Send</button>
+                </form>
+                <div class="form-adress-block__text">
+                    <div class="form-adress-block__text__row">
+                        <h5 class="form-adress-block__text__row__title">Address</h5>
+                        <a class="form-adress-block__text__row__desc" href="#" type="address">
+                            123 City name, Street, City, Country
+                        </a>
+                    </div>
+                    <div class="form-adress-block__text__row">
+                        <h5 class="form-adress-block__text__row__title">Email</h5>
+                        <a class="form-adress-block__text__row__desc" href="#" type="email">
+                            cahee@domain.com
+                        </a>
+                    </div>
+                    <div class="form-adress-block__text__row">
+                        <h5 class="form-adress-block__text__row__title">Phone</h5>
+                        <a class="form-adress-block__text__row__desc" href="#" type="tel">
+                            +012 345 6789
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="footer-wrapper container">
+        <footer class="footer-wrapper__footer">
+            <p class="footer-wrapper__footer__text">
+                &copy; 2015 Company. All right reserved.
+            </p>
+            <a class="footer-wrapper__footer__logo-link" href="#" alt="Cahee">
+                <img src="img/logo_grey.png">
+            </a>
+            <p class="footer-wrapper__footer__text">
+                Made with <a class="footer-wrapper__footer__text__link" href="https://www.behance.net/Auskteez"
+                    alt="Auskteez Site" target="_blank">love</a> by Auskteez
+            </p>
+        </footer>
+    </section>
+    <script src="js/burger-script.js"></script>
+</body>
+
+</html>

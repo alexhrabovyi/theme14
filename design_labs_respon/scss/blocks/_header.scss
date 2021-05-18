@@ -1,0 +1,81 @@
+@import "../libs/values";
+@import "../libs/colors";
+
+.header-wrapper {
+    padding: 331.5px 0;
+    @include background-cover(url(../img/header_bg.jpg));
+    background-position: right;
+    position: relative;
+
+    @include media-l {
+        padding: 250px 0;
+    }
+
+    @include media-s {
+        padding: 200px 0;
+    }
+}
+
+.header-wrapper__header {
+    @include flex-column;
+
+    &__logo-link {
+        margin-bottom: 96px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+    }
+
+    &__scoll-icon {
+        position: absolute;
+        bottom: 116px;
+    }
+}
+
+.logo-link {
+    &_white {
+        width: 67px;
+        height: 70px;
+    }
+
+    &:hover, &:focus {
+        outline: none;
+        transform: scale(1.2);
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 54px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: $white;
+
+    @include media-s {
+        font-size: 40px;
+    }
+
+    @include media-xs {
+        font-size: 30px;
+    }
+}
+
+.desc {
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white;
+
+    @include media-s {
+        font-size: 14px;
+        max-width: 80%;
+    }
+}

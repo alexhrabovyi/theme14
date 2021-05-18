@@ -1,0 +1,133 @@
+.contact-wrapper {
+    @include background-cover(url(../img/contact_bg.jpg));
+    padding-top: 92px;
+    padding-bottom: 92px;
+
+    &__article {
+        @include flex-column;
+
+        &__title-bold {
+            margin-bottom: 30px;
+
+            @include media-xs {
+                font-size: 70px;
+            }
+        }
+
+        &__text {
+            width: 346px;
+            margin-bottom: 50px;
+
+            @include media-xs {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.form-adress-block {
+    width: 100%;
+    @include flex-between;
+    flex-wrap: wrap;
+
+    &__form {
+        width: 553px;
+
+        @include media-s {
+            width: 100%;
+            @include flex-column;
+        }
+
+        &__input {
+            width: 100%;
+            height: 50px;
+            padding: 0 22px;
+            margin-bottom: 15px;
+            background: $aqua;
+            border: none;
+            border-left: solid 5px transparent;
+            font-weight: 300;
+            font-size: 15px;
+            color: $white;
+
+            &:hover {
+                background: $aqua-hover;
+            }
+
+            &:focus {
+                border-color: $dark-blue;
+                outline: none;
+                font-weight: 700;
+            }
+        }
+
+        &__textarea {
+            padding: 16px 22px;
+            height: 250px;
+            resize: none;
+        }
+
+        &__button {
+            &:hover, &:focus {
+                background: $blue-hover;
+                color: $white;
+                border-color: $blue-hover;
+            }
+
+            &:active {
+                background: $blue-active;
+                color: $white;
+                border-color: $blue-active;
+            }
+        }
+    }
+
+    &__text {
+        width: 41.9%;
+
+        @include media-xl {
+            width: 38%;
+        }
+
+        @include media-l {
+            width: 30%;
+        }
+
+        @include media-m {
+            width: 23%;
+        }
+
+        @include media-s {
+            width: 100%;
+            @include flex-column;
+            order: -1;
+            text-align: center;
+        }
+
+        &__row {
+            margin-bottom: 16px; 
+
+            &__title {
+                font-size: 17px;
+                font-weight: 700;
+                color: $black;
+                text-transform: uppercase;
+            }
+
+            &__desc {
+                font-size: 17px;
+                font-weight: 400;
+                color: $black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.form-adress-block__form__input::-webkit-input-placeholder {
+    color: $white;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}

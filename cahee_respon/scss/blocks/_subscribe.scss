@@ -1,0 +1,102 @@
+.subscribe-wrapper {
+    padding-top: 144px;
+    padding-bottom: 144px;
+    @include background-cover(url(../img/subscribe_bg.jpg));
+
+    @include media-s {
+        background: url(../img/subscribe_bg.jpg) no-repeat 100% 400%;
+    }
+
+    @include media-xs {
+        background: url(../img/subscribe_bg.jpg) no-repeat 100% 200%;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+
+        &__title-bold {
+            margin-bottom: 20px;
+
+            @include media-s {
+                text-align: center;
+            }
+        }
+
+        &__text {
+            width: 479px;
+            margin-bottom: 30px;
+
+            @include media-s {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.title-bold_small {
+    font-size: 40px;
+}
+
+.sub-form {
+    display: flex;
+
+    @include media-s {
+        @include flex-column
+    }
+
+    &__input {
+        width: 570px;
+        height: 55px;
+        padding: 0 15px 0 15px;
+        font-weight: 300;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        border: 1px solid $black;
+
+        @include media-s {
+            width: 100%;
+        }
+
+        &:hover {
+            background: $white-hover;
+        }
+
+        &:focus {
+            outline: none;
+            color: $black;
+            font-weight: 700;
+        }
+    }
+
+    &__button {
+        margin-left: 30px;
+
+        @include media-s {
+            margin: 30px 0 0 0;
+        }
+    }
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.button_small {
+    width: 170px;
+}
+
+.button_green {
+    background: $green;
+
+    &:hover, &:focus {
+        border-color: $green;
+        color: $green;
+    }
+
+    &:active {
+        border-color: $green-active;
+        color: $green-active;
+    }
+}

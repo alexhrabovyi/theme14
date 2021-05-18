@@ -1,0 +1,76 @@
+.our-works-wrapper__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include media-xs {
+        justify-content: center;
+    }
+} 
+
+.nav-link {
+    width: 28.54%;
+    height: 237px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    padding: 40px;
+    margin-bottom: 0.57%;
+
+    &:hover, &:focus {
+        outline: none;
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+    &_big {
+        width: 41.77%;
+    }
+
+    &_1 {
+        @include background-cover(url(../img/work_bg_1.jpg));
+    }
+
+    &_2 {
+        @include background-cover(url(../img/work_bg_2.jpg));
+    }
+
+    &_3 {
+        @include background-cover(url(../img/work_bg_3.jpg));
+    }
+
+    &_4 {
+        @include background-cover(url(../img/work_bg_4.jpg));
+    }
+
+    &_5 {
+        @include background-cover(url(../img/work_bg_5.jpg));
+    }
+
+    &_6 {
+        @include background-cover(url(../img/work_bg_6.jpg));
+    }
+
+    @include media-l {
+        width: 49.72%;
+    }
+
+    @include media-s {
+        font-size: 25px;
+    }
+
+    @include media-xs {
+        width: 96%;
+        margin-bottom: 2%;
+    }
+}
+
+

@@ -1,0 +1,43 @@
+// blocks files 
+@import "blocks/about";
+@import "blocks/contact-us";
+@import "blocks/header";
+@import "blocks/our-works";
+@import "blocks/services";
+@import "blocks/what-we-do";
+
+// libs files
+// @import "libs/normalize";
+@import "libs/colors";
+@import "libs/values";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+// properties for all elements
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+    font-family: "Lato", sans-serif;
+}
+
+@include media-xxl {   
+}
+
+@include media-xl {
+}
+
+@include media-l {
+}
+
+@include media-m {
+}
+
+@include media-s {
+}
+
+@include media-xs {
+}
+

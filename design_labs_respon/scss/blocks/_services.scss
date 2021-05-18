@@ -1,0 +1,36 @@
+.services-wrapper {
+    padding: 124px 0;
+    @include background-cover(url(../img/services_bg.jpg));
+
+    @include media-l {
+        padding: 130px 0;
+    }
+
+    @include media-s {
+        padding: 120px 0;
+    }
+
+    @include media-xs {
+        padding: 100px 0;
+    }
+}
+
+.services-wrapper__article {
+    @include flex-center;
+}
+
+.text-block_white {
+    border-color: $white;
+
+    &:before, &:after {
+        background-color: $white;
+    }
+}
+
+.title-small_white {
+    color: $white;
+}
+
+.text_white {
+    color: $white;
+}

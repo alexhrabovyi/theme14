@@ -1,0 +1,49 @@
+// media mixins
+
+@mixin media-xs {
+    @media (max-width: 575.98px) { @content; }
+}
+
+@mixin media-s {
+    @media (max-width: 767.98px) { @content; }
+}
+
+@mixin media-m {
+    @media (max-width: 991.98px) { @content; }
+}
+
+@mixin media-l {
+    @media (max-width: 1199.98px) { @content; }
+}
+
+@mixin media-xl {
+    @media (max-width: 1399.98px) { @content; }
+}
+
+@mixin media-xxl {
+    @media (min-width: 1400px) { @content; }
+}
+
+// flex mixins
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-center {
+    @include flex-center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    @include flex-center-center;
+    flex-direction: column;
+}
+
+// background mixin
+
+@mixin background-cover($property) {
+    background: ($property) center center no-repeat;
+    background-size: cover;
+}
